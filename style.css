@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    background-color: antiquewhite;
+}
+
+.header{
+    height: 350px;
+    background: url(../../assets/img/header.jpeg) no-repeat center;
+}
+
+.title{
+    font-size: 42px;
+    color:darkgoldenrod;;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px;
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+
+}
+
+.myBag{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkgreen;
+    font-weight: 900;
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    top: 480px;
+    left: 1250px;
+    cursor: pointer;
+}
+
+.myBag::before{
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    top: -10px;
+    left: -80px;
+    background: url(./assets/icons/cart.png) no-repeat;
+    z-index: 1;
+}
+
+.myBagBooks{
+    opacity: 0;
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    top: 190px;
+    left: 400px;
+    background-color: rgb(97, 241, 97);
+    padding: 20px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.myBagClose{
+    position: absolute;
+    top: 20px;
+    left: 660px;
+    background-color: rgb(246, 191, 218);
+    cursor: pointer;
+}
+
+
+.confirmOrder{
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    width: 270px;
+    font-size: 20px;
+    top: 470px;
+    left: 250px;
+}
+
+.bookContainer{
+    background: url(./assets/img/old_paper.avif);
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+    padding: 30px 30px 30px 30px;
+
+}
+
+.bookBox{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.bookInfo{
+    padding: 10px;
+}
+
+.bookImg{
+    height: 350px;
+    width: 250px;
+}
+
+.bookAuthor{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.bookTitle{
+    font-size: 26px;
+    margin-bottom: 150px;
+    font-style: italic;
+}
+
+
+.bookPrice{
+    font-size: 26px;
+    color:blueviolet;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.bagBox{
+    display: inline;
+    position: relative;
+
+}
+
+.popUpButton {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color:rgb(27, 81, 61);
+    font-style: italic;
+    cursor: pointer;
+    margin-right: 70px;
+    background:none;
+    border: none;
+
+}
+
+.popUpButton:hover{
+    color: brown;
+}
+
+
+
+.popUp{
+    position: absolute;
+    opacity: 0;
+    width: 360px;
+    background-color: rgb(231, 227, 227);
+    padding: 20px 20px 10px 10px;
+    top: -190px;
+    left: 20px;
+    transition: 0.5s all;
+}
+
+.popUpClose{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 2px;
+    left: 368px;
+    border: none;
+    background: url(./assets/icons/close.png) no-repeat;
+    cursor: pointer;
+}
+
+
+.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popUpText{
+    font-size: 16px;
+    font-style: normal;
+    text-align:left;
+ }
+
+
+
+.bagButton{
+    font-size: 18px;
+    color:rgb(80, 35, 10);
+    font-style: italic;
+    cursor: pointer;
+    background-color:khaki;
+    border-color: khaki;
+    border-radius: 5%;
+}
+
+.bagButton:hover{
+    background-color: rgb(224, 214, 129);
+    border-color: rgb(224, 214, 129);
+}
