@@ -206,7 +206,7 @@ let bookCatalog =[{
         
         let orderConfirmBtn = document.querySelector('.confirmOrder');
         orderConfirmBtn.addEventListener('click', () => {
-          window.location.href = 'pages/order_confirmation/index.html';
+          window.location.href = './order.html';
         });
         
         
