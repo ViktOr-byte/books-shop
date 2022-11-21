@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="./order.css">
+</head>
+<body>
+    <header class="header"></header>
+    <div class="wrapper">
+            <main>
+                 <h1 class="title">Order Confirmation</h1>
+                 <a href="./index.html">Return to the book-shop</a>
+                 <div class="form_wrapper">
+
+                 <form action="#">
+
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="text" placeholder="Enter your surname" required>
+                    <input type="date" required min="">
+
+                    <div class="devlivery_adress">
+                        <p>Shipping adress</p>
+                        <input type="text" placeholder="Enter your street" required>
+                        <input type="text" placeholder="Enter your house number" required>
+                        <input type="number" placeholder="Enter your flat number" required>
+                    </div>
+
+                    <div class="payment">
+                        <p>Choose a payment method</p>
+                        <div class="payment_radio">
+                            <input class="payment_input" type="radio" name="cash" id="cash">
+                            <label class="payment_label" for="cash">Cash</label>
+                        </div>
+
+                        <div class="payment_radio">
+                            <input class="payment_input" type="radio" name="card" id="card" checked="checked">
+                            <label class="payment_label" for="card">Card</label>
+                        </div>
+                    </div>
+
+
+                    <div class="gifts">
+                        <p>Choose two gifts</p>
+                        <div class="gift_checkbox">
+                            <input class="gift_input" type="checkbox" name="pack" id="pack">
+                            <label class="gift_label" for="pack">pack as a gift</label>
+                        </div>
+                        <div class="gift_checkbox">
+                            <input class="gift_input" type="checkbox" name="postcard" id="postcard">
+                            <label class="gift_label" for="postcard">add postcard</label>
+                        </div>
+                        <div class="gift_checkbox">
+                            <input class="gift_input" type="checkbox" name="discount" id="discount">
+                            <label class="gift_label" for="discount">provide 2% discount to the next time</label>
+                        </div>
+                        <div class="gift_checkbox">
+                            <input class="gift_input" type="checkbox" name="brand" id="brand">
+                            <label class="gift_label" for="brand">branded pen or pencil</label>
+                        </div>
+                    </div>
+                </form>
+
+                <button class="button_complete">COMPLETE</button>
+
+                </div>
+
+            </main>
+    </div>
+</body>
+</html>

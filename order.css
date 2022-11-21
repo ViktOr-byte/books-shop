@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    background-color: antiquewhite;
+}
+
+a{
+    margin-left: 210px;
+    text-decoration: none;
+    color:darkblue;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header{
+    height: 350px;
+    background: url(../../assets/img/header.jpeg) no-repeat center;
+    margin-bottom: 60px;
+}
+
+h1{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 900;
+    color: indianred;
+    margin-bottom: 60px;
+}
+
+.form_wrapper{
+    height: 500px;
+    width: 700px;
+    background-color: ivory;
+    margin: 10px auto;
+    padding: 60px 40px;
+}
+
+input {
+
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width: 150px;
+    height: 20px;
+}
+
+p{
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: darkblue;
+}
+
+.payment, .gifts{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.payment >div {
+    display: inline;
+    margin-right: 50px;;
+
+}
+
+#cash, #card, #pack, #postcard, #discount, #brand {
+    width: 20px;
+}
+
+.button_complete{
+height: 50px;
+width: 120px;
+margin: 0 280px;
+background-color:gold;
+border-color: goldenrod;
+font-size: 18px;
+font-weight: 700;
+color: darkolivegreen;
+}
+
+.button_complete:hover{
+    background-color:goldenrod;
+}
